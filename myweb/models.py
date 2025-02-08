@@ -21,6 +21,5 @@ class Income(models.Model):
     amount = models.BigIntegerField(default=0)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
-    # kheili gaydi
     def __str__(self):
         return "{}-{}".format(self.date, self.amount)
